@@ -1,5 +1,5 @@
-# News-letter-signup
-Hey!
+# News-letter-signup 📰
+Hey!👋
 This is a small example of how to build a news-letter-signup page.
 
 # What is the purpose of a newsletter?
