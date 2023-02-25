@@ -17,7 +17,7 @@ app.get("/", function (req, res) {
 
 
 const client = require("@mailchimp/mailchimp_marketing");
-client.setConfig({apiKey: "5545dad5df53096ba9507136894c1ffb",server: "us13",});
+client.setConfig({apiKey: "<your api key>",server: "us13",});
 
 app.post("/", function (req, res) {
     const email = req.body.email;
@@ -29,7 +29,7 @@ app.post("/", function (req, res) {
     }
 
     const run = async () => {
-        const response = await client.lists.addListMember("b2f71ca55a", {
+        const response = await client.lists.addListMember("<your list id>", {
           email_address: subscribingUser.email,
           status: "subscribed",
           merge_fields: {
